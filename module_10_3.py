@@ -33,7 +33,7 @@ class Bank:
 
 
 bk = Bank()
-# Т.к. методы принимают self, в потоки нужно передать сам объект класса Bank
+
 th1 = threading.Thread(target=bk.deposit)
 th2 = threading.Thread(target=bk.take)
 
